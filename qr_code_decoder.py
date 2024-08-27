@@ -9,7 +9,7 @@ def decode_qr_code(file_path):
         print("No QR code found in the provided image.")
         return
     for barcode in qr_code:
-        print(f"Ito ung data: {barcode.data.decode('utf-8')}")
+        print(f"This is the data: {barcode.data.decode('utf-8')}")
         
 if __name__ == "__main__":
     if len(sys.argv) != 2:
